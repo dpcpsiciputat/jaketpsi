@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Pemesanan Jaket by DPC PSI Ciputat</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="css/style.css">
-	</head>
+<head>
 
-	<body>
+	<meta charset="utf-8">
+	<title>Pemesanan Jaket by DPC PSI Ciputat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<div class="wrapper" style="background-image: url('images/bg-registration-form-1.png');">
-			<div class="inner">
-				<div class="image-holder">
-					<img src="images/registration-form-1.png" alt="">
-				</div>
-				<form action="https://formspree.io/dpcpsi.ciputat@outlook.com" method="POST">
-					<h3>Form Pemesanan Jaket IDR 150.000</h3>
-					<div class="form-group">
-						<input type="text" name="firstname" id="firstname" placeholder="First Name" class="form-control">
-						<input type="text" name="lastname" id="lastname" placeholder="Last Name" class="form-control">
-					</div>
-					<div class="form-wrapper">
-						<input type="text" name="phone" id="phone" placeholder="Whatsapp Number" class="form-control">
-						<i class="zmdi zmdi-phone"></i>
-					</div>
-					<div class="form-wrapper">
-						<input type="text" name="email" id="email" placeholder="Email Address" class="form-control">
-						<i class="zmdi zmdi-email"></i>
-					</div>
-					<div class="form-wrapper">
-						<select name="size" id="size" class="form-control">
-							<option value="" disabled selected>Size</option>
-							<option value="m">Medium (M)</option>
-							<option value="l">Large (L)</option>
-							<option value="xl">Extra Large (XL)</option>
-						</select>
-						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
-					</div>
-					<div class="form-wrapper">
-						<select name="shipping" id="shipping" class="form-control">
-							<option value="" disabled selected>Shipping</option>
-							<option value="dpd">Take At DPD</option>
-							<option value="gosend">Go Send/Grab Express</option>
-						</select>
-						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
-					</div>
-					<button>Register
-						<i class="zmdi zmdi-arrow-right"></i>
-					</button>
-				</form>
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" style="background-image: url('images/bg-registration-form-1.png');">
+		<div class="inner">
+			<div class="image-holder">
+				<img src="images/registration-form-1.png" alt="">
 			</div>
+			<form>
+				<h3>Form Pemesanan Jaket IDR 149.999</h3>
+				<div class="form-group">
+					<input type="text" name="firstname" id="firstname" placeholder="First Name" class="form-control">
+					<input type="text" name="lastname" id="lastname" placeholder="Last Name" class="form-control">
+				</div>
+				<div class="form-wrapper">
+					<input type="text" name="phone" id="phone" placeholder="Whatsapp Number" class="form-control">
+					<i class="zmdi zmdi-phone"></i>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" name="email" id="email" placeholder="Email Address" class="form-control">
+					<i class="zmdi zmdi-email"></i>
+				</div>
+				<div class="form-wrapper">
+					<select name="size" id="size" class="form-control">
+						<option value="" disabled selected>Size</option>
+						<option value="M">Medium (M)</option>
+						<option value="L">Large (L)</option>
+						<option value="XL">Extra Large (XL)</option>
+					</select>
+					<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+				</div>
+				<div class="form-wrapper">
+					<select name="shipping" id="shipping" class="form-control">
+						<option value="" disabled selected>Shipping</option>
+						<option value="Take At DPD">Take At DPD</option>
+						<option value="GoSend">Go Send/Grab Express</option>
+					</select>
+					<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+				</div>
+				<div class="form-wrapper">
+					<select name="payment" id="payment" class="form-control">
+						<option value="" disabled selected>Payment Method</option>
+						<option value="A1">ATM Bersama</option>
+						<option value="VC">Credit Card</option>
+						<option value="BK">BCA KlikPay</option>
+						<option value="FT">Alfamart/Pegadaian/POS</option>
+					</select>
+					<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+				</div>
+			</form>
+			<button onclick="paymentMethod()">BUY & PAY
+				<i class="zmdi zmdi-arrow-right"></i>
+			</button>
 		</div>
-		
-	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	</div>
+	<script defer src="js/scriptapi.js"></script>
+</body>
+
 </html>
