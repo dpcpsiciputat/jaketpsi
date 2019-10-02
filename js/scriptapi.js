@@ -213,7 +213,7 @@ function paymentMethod() {
             paymentAmount: amount,
             paymentMethod: document.getElementById("payment").value,
             merchantOrderId: orderId,
-            productDetails: "Jaket PSI " + document.getElementById("size").value + " " + document.getElementById("shipping").value+ " " + document.getElementById("firstname").value + " " + document.getElementById("phone").value,
+            productDetails: document.getElementById("size").value + " " + document.getElementById("shipping").value+ " " + document.getElementById("firstname").value + " " + document.getElementById("phone").value,
             email: document.getElementById("email").value,
             phoneNumber: document.getElementById("phone").value,
             additionalParam: "",
