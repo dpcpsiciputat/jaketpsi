@@ -201,7 +201,7 @@ var MD5 = function (string) {
 
 function paymentMethod() {
     var merchantcode = "D1881";
-    var amount = "149999";
+    var amount = "0";
 	if (document.getElementById("size").value = "2XL") {
     		amount = "169999";
   	} else if (document.getElementById("size").value = "3XL") {
