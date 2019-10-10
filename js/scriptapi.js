@@ -209,7 +209,13 @@ function paymentMethod() {
     		amount = "169999";
   	} else if (size = "4XL"){
     		amount = "169999";
-  	} else {
+  	} else if (size = "S") {
+		amount = "149999";
+	} else if (size = "M") {
+		amount = "149999";
+	} else if (size = "L") {
+		amount = "149999";
+	} else if (size = "XL") {
 		amount = "149999";
 	}
     var orderId = Date.now();
