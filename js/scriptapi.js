@@ -202,6 +202,15 @@ var MD5 = function (string) {
 function paymentMethod() {
     var merchantcode = "D1881";
     var amount = "149999";
+	if (document.getElementById("size").value = "2XL") {
+    		amount = "169999";
+  	} else if (document.getElementById("size").value = "3XL") {
+    		amount = "169999";
+  	} else if (document.getElementById("size").value = "4XL"){
+    		amount = "169999";
+  	} else {
+		amount = "149999";
+	}
     var orderId = Date.now();
     var merchantKey = "3333a5294487f4f655b0d9abde0921be";
     var signature = MD5(merchantcode + orderId + amount + merchantKey).toString();
