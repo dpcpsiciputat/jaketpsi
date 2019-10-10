@@ -201,12 +201,13 @@ var MD5 = function (string) {
 
 function paymentMethod() {
     var merchantcode = "D1881";
+    var size = document.getElementById("size").value;	
     var amount = "0";
-	if (document.getElementById("size").value = "2XL") {
+	if (size = "2XL") {
     		amount = "169999";
-  	} else if (document.getElementById("size").value = "3XL") {
+  	} else if (size = "3XL") {
     		amount = "169999";
-  	} else if (document.getElementById("size").value = "4XL"){
+  	} else if (size = "4XL"){
     		amount = "169999";
   	} else {
 		amount = "149999";
@@ -222,7 +223,7 @@ function paymentMethod() {
             paymentAmount: amount,
             paymentMethod: document.getElementById("payment").value,
             merchantOrderId: orderId,
-            productDetails: document.getElementById("size").value + " " + document.getElementById("shipping").value+ " " + document.getElementById("firstname").value + " " + document.getElementById("phone").value,
+            productDetails: size + " " + document.getElementById("shipping").value+ " " + document.getElementById("firstname").value + " " + document.getElementById("phone").value,
             email: document.getElementById("email").value,
             phoneNumber: document.getElementById("phone").value,
             additionalParam: "",
